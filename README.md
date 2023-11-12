@@ -22,16 +22,20 @@ Apply the respective filters -Sobel,Laplacian edge dectector and Canny edge dect
 Display the filtered image using plot and imshow.
 
 ## Program:
-## Developed by:Rama E.K.Lekshmi
-## Register no:212222240082
-# Import the packages and load the image, Convert to grayscale and remove noise:
-
+```
+Import the packages and load the image, Convert to grayscale, and remove noise:
+Developed by: Pooja A
+Register no:212222240072
+```
+```
 import cv2
 import matplotlib.pyplot as plt
 image = cv2.imread("carss.jpg")
 plt.imshow(image)
 gray_image = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 new_image = cv2.GaussianBlur(gray_image,(3,3),0)
+```
+```
 # SOBEL EDGE DETECTOR:
 
 # SOBEL-X:
@@ -52,6 +56,8 @@ plt.title("Sobel-X")
 plt.xticks([])
 plt.yticks([])
 plt.show()
+```
+```
 # SOBEL-Y:
 
 import cv2
@@ -70,6 +76,8 @@ plt.title("Sobel-Y")
 plt.xticks([])
 plt.yticks([])
 plt.show()
+```
+```
 # SOBEL-XY:
 
 import cv2
@@ -88,6 +96,8 @@ plt.title("Sobel-XY")
 plt.xticks([])
 plt.yticks([])
 plt.show()
+```
+```
 # LAPLACIAN EDGE DETECTOR:
 
 import cv2
@@ -106,6 +116,8 @@ plt.title("Laplacian")
 plt.xticks([])
 plt.yticks([])
 plt.show()
+```
+```
 # CANNY EDGE DETECTOR:
 
 import cv2
@@ -124,25 +136,27 @@ plt.title("Canny_edges")
 plt.xticks([])
 plt.yticks([])
 plt.show()
-Output:
-INPUT IMAGE:
+```
+
+## Output:
+### INPUT IMAGE:
 DI7 1
 
-SOBEL EDGE DETECTOR:
-SOBEL-X:
+## SOBEL EDGE DETECTOR:
+### SOBEL-X:
 Di7 2
 
-SOBEL-Y:
+### SOBEL-Y:
 Di7 3
 
-SOBEL-XY:
+### SOBEL-XY:
 Di7 4
 
-LAPLACIAN EDGE DETECTOR:
+### LAPLACIAN EDGE DETECTOR:
 Di7 5
 
-CANNY EDGE DETECTOR:
+### CANNY EDGE DETECTOR:
 DI7 6
 
-Result:
+## Result:
 Thus the edges are detected using Sobel, Laplacian, and Canny edge detectors.
