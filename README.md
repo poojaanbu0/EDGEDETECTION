@@ -129,15 +129,24 @@ plt.show()
 ```
 
 ## Output:
+### Original:
+![WhatsApp Image 2023-11-13 at 23 28 20_ddd3ff47](https://github.com/poojaanbu0/EDGEDETECTION/assets/119390329/2f3dddd5-e443-4e99-be8d-8a3625ac46a6)
+
 ### SOBEL EDGE DETECTOR
 ### Sobel X:
+![WhatsApp Image 2023-11-14 at 00 21 20_4bb5ef22](https://github.com/poojaanbu0/EDGEDETECTION/assets/119390329/70fd586e-095f-484d-977e-6fafec166cac)
 
 ### Sobel Y:
+![WhatsApp Image 2023-11-14 at 00 22 02_66cb81c0](https://github.com/poojaanbu0/EDGEDETECTION/assets/119390329/8b0cf368-02f4-429b-a2e5-f7ee28a78c2d)
 
 ### Sobel XY:
+![WhatsApp Image 2023-11-14 at 00 22 28_d5d46b36](https://github.com/poojaanbu0/EDGEDETECTION/assets/119390329/af1dbcb9-f8a3-4175-b076-dccfc3a57cdf)
+
 ### LACIAN EDGE DETECTOR
+![WhatsApp Image 2023-11-13 at 23 36 44_636dbe59](https://github.com/poojaanbu0/EDGEDETECTION/assets/119390329/44f7a016-c19a-4cfc-9ac6-71febada1dfc)
 
 ### CANNY EDGE DETECTOR
+![WhatsApp Image 2023-11-14 at 00 23 02_493dff9b](https://github.com/poojaanbu0/EDGEDETECTION/assets/119390329/b5ce00d3-40fe-48d0-9211-d1fe0925f891)
 
 ## Result:
 Thus the edges are detected using Sobel, Laplacian, and Canny edge detectors.
