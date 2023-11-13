@@ -26,7 +26,7 @@ Display the filtered image using plot and imshow.
 Developed by: Pooja A
 Register no: 212222240072
 ```
-###Sobel X:
+### Sobel X:
 ```PYTHON
 import cv2
 import matplotlib.pyplot as plt
@@ -48,7 +48,8 @@ plt.yticks([])
 plt.show()
 ```
 
-Sobel Y:
+### Sobel Y:
+```python
 import cv2
 import matplotlib.pyplot as plt
 image=cv2.imread("1.jpg")
@@ -65,7 +66,10 @@ plt.title("Sobel-Y")
 plt.xticks([])
 plt.yticks([])
 plt.show()
-Sobel XY:
+```
+
+### Sobel XY:
+```python
 import cv2
 import matplotlib.pyplot as plt
 image=cv2.imread("1.jpg")
@@ -82,7 +86,10 @@ plt.title("Sobel-XY")
 plt.xticks([])
 plt.yticks([])
 plt.show()
-LAPLACIAN EDGE DETECTOR
+```
+
+### LAPLACIAN EDGE DETECTOR
+```python
 import cv2
 import matplotlib.pyplot as plt
 image=cv2.imread("1.jpg")
@@ -99,7 +106,10 @@ plt.title("Laplacian")
 plt.xticks([])
 plt.yticks([])
 plt.show()
-CANNY EDGE DETECTOR
+```
+
+### CANNY EDGE DETECTOR
+```python
 import cv2
 import matplotlib.pyplot as plt
 image=cv2.imread("1.jpg")
@@ -116,22 +126,18 @@ plt.title("Canny_edges")
 plt.xticks([])
 plt.yticks([])
 plt.show()
-Output:
-SOBEL EDGE DETECTOR
-Sobel X:
-1
+```
 
-Sobel Y:
-2
+## Output:
+### SOBEL EDGE DETECTOR
+### Sobel X:
 
-Sobel XY:
-3
+### Sobel Y:
 
-LACIAN EDGE DETECTOR
-4
+### Sobel XY:
+### LACIAN EDGE DETECTOR
 
-CANNY EDGE DETECTOR
-5
+### CANNY EDGE DETECTOR
 
-Result:
+## Result:
 Thus the edges are detected using Sobel, Laplacian, and Canny edge detectors.
