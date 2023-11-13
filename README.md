@@ -26,90 +26,62 @@ Display the filtered image using plot and imshow.
 Developed by: Pooja A
 Register no: 212222240072
 ```
-### Import the packages
-```
+
+### Import the packages and load image
+```python
 import cv2
 import matplotlib.pyplot as plt
-```
-### Load the image, Convert to grayscale and remove noise
-```
-img=cv2.imread("dipt.jpg",0)
-gray=cv2.cvtColor(img,cv2.COLOR_GRAY2RGB)
+img = cv2.imread("wome.jpg")
+gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 gray = cv2.GaussianBlur(gray,(3,3),0)
+plt.title("Original")
+plt.imshow(gray,cmap='gray')
+plt.axis('off')
+plt.show()
 ```
 
 ## SOBEL EDGE DETECTOR
 ### SOBEL X AXIS :
-```
+```python
 sobelx = cv2.Sobel(gray,cv2.CV_64F,1,0,ksize=5)
-plt.figure(figsize=(8,8))
-plt.subplot(1,2,1)
-plt.imshow(gray)
-plt.title("Original Image")
-plt.axis("off")
-plt.subplot(1,2,2)
-plt.imshow(sobelx)
-plt.title("Sobel X axis")
+plt.imshow(sobelx,cmap='gray')
+plt.title("Sobel X")
 plt.axis("off")
 plt.show()
 ```
 
 ### SOBEL Y AXIS :
-```
+```python
 sobely = cv2.Sobel(gray,cv2.CV_64F,0,1,ksize=5)
-plt.figure(figsize=(8,8))
-plt.subplot(1,2,1)
-plt.imshow(gray)
-plt.title("Original Image")
-plt.axis("off")
-plt.subplot(1,2,2)
-plt.imshow(sobely)
-plt.title("Sobel Y axis")
+plt.imshow(sobely,cmap='gray')
+plt.title("Sobel Y")
 plt.axis("off")
 plt.show()
 ```
 
 ### SOBEL XY AXIS :
-```
+```python
 sobelxy = cv2.Sobel(gray,cv2.CV_64F,1,1,ksize=5)
-plt.figure(figsize=(8,8))
-plt.subplot(1,2,1)
-plt.imshow(gray)
-plt.title("Original Image")
-plt.axis("off")
-plt.subplot(1,2,2)
-plt.imshow(sobelxy)
-plt.title("Sobel XY axis")
+plt.imshow(sobelxy,cmap='gray')
+plt.title("Sobel XY")
 plt.axis("off")
 plt.show()
 ```
 
 ### LAPLACIAN EDGE DETECTOR
-```
+```python
 lap=cv2.Laplacian(gray,cv2.CV_64F)
-plt.figure(figsize=(8,8))
-plt.subplot(1,2,1)
-plt.imshow(gray)
-plt.title("Original Image")
-plt.axis("off")
-plt.subplot(1,2,2)
-plt.imshow(lap)
-plt.title("Laplacian Edge Detector")
+plt.imshow(lap,cmap='gray')
+plt.title("Laplacian")
 plt.axis("off")
 plt.show()
 ```
 
 ### CANNY EDGE DETECTOR
-```
+```python
 canny=cv2.Canny(gray,120,150)
-plt.figure(figsize=(8,8))
-plt.subplot(1,2,1)
-plt.imshow(gray)
-plt.title("Original Image")
-plt.axis("off")
-plt.subplot(1,2,2)
-plt.imshow(canny)
-plt.title("Canny Edge Detector")
+plt.imshow(canny,cmap='gray')
+plt.title("Canny")
 plt.axis("off")
 plt.show()
 ```
